@@ -39,11 +39,15 @@ Table ``epigram``
 | created_at | timestamp | the creation time of the row |
 | updated_at | timestamp | the update time of the row |
 
+## Data Source
+The epigram data is from [shlomif/fortune-mod](https://github.com/shlomif/fortune-mod/tree/master/fortune-mod/datfiles)
+
 ## Components
 
 Back-end: Java Spring Boot <br>
 ORM: Hibernate <br>
 Front-end: Bootstrap 5, Vue.js 3
+
 
 ## Author
 Junyan Li (i@jybb.me)

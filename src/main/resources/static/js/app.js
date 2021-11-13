@@ -1,3 +1,4 @@
+// Change the API endpoint if necessary
 var api = '/'
 
 var app = new Vue({

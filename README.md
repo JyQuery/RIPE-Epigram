@@ -6,8 +6,9 @@ Build an HTML page that dynamically loads a random epigram from your server, and
 build a backend in java to support it.
 
 ## Install
-1. Import the SQL file into your database
-2. Update the database connection details in src/resources/application.properties
+1. Import the SQL file `database/epigram.sql` into your database
+2. Update the database connection strings in `src/resources/application.properties`
+3. Update the API endpoint in `src/resources/static/js/app.js` if necessary
 
 ## API Reference
 | Method | URI                       | Attributes                     | Description                                                      |
@@ -19,7 +20,7 @@ build a backend in java to support it.
 | PUT    | /epigram/{id}             | content: string                | Update the content of an epigram
 | DELETE | /epigram/{id}             |                                | Delete an epigram by id
 
-## Status Definition
+## API Status Definition
 | Code | Description         |
 |------|---------------------|
 | 200  | Everything OK       |
@@ -30,9 +31,19 @@ build a backend in java to support it.
 
 ## Database Schema
 Table ``epigram``
+
 | column | datatype | description |
 |--------|----------|------------|
 | id     | integer  | auto increment id |
 | content | text | the epigram content |
 | created_at | timestamp | the creation time of the row |
 | updated_at | timestamp | the update time of the row |
+
+## Components
+
+Back-end: Java Spring Boot <br>
+ORM: Hibernate <br>
+Front-end: Bootstrap 5, Vue.js 3
+
+## Author
+Junyan Li (i@jybb.me)

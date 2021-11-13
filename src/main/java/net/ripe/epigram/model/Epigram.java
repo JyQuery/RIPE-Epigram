@@ -1,9 +1,6 @@
 package net.ripe.epigram.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.sql.Timestamp;
 
 @Entity
@@ -11,6 +8,7 @@ public class Epigram {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
+    @Lob
     private String content;
     private Timestamp created_at;
     private Timestamp updated_at;

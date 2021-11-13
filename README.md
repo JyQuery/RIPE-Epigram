@@ -27,3 +27,12 @@ build a backend in java to support it.
 | 404  | Resource not found  |
 | 405  | Method not allowed  |
 | 50x  | Server Internal Error|
+
+## Database Schema
+Table ``epigram``
+| column | datatype | description |
+|--------|----------|------------|
+| id     | integer  | auto increment id |
+| content | text | the epigram content |
+| created_at | timestamp | the creation time of the row |
+| updated_at | timestamp | the update time of the row |

@@ -32,12 +32,12 @@ build a backend in java to support it.
 ## Database Schema
 Table ``epigram``
 
-| column | datatype | description |
+| Column | Datatype | Description |
 |--------|----------|------------|
-| id     | integer  | auto increment id |
-| content | text | the epigram content |
-| created_at | timestamp | the creation time of the row |
-| updated_at | timestamp | the update time of the row |
+| id     | bigint  | Auto increment id |
+| content | text | The epigram content |
+| created_at | datetime | The creation time of the row |
+| updated_at | datetime | The update time of the row |
 
 ## Data Source
 The epigram data is from [shlomif/fortune-mod](https://github.com/shlomif/fortune-mod/tree/master/fortune-mod/datfiles)

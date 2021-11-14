@@ -25,7 +25,7 @@ var app = new Vue({
         },
         save: function (event) {
             this.showAlert = false
-            axios.put(api + 'epigram/' + this.epid, 'content=' + this.epigram)
+            axios.put(api + 'epigram/' + this.epid, 'content=' + encodeURIComponent(this.epigram))
                 .then(response => {
                     var res = response.data
                     if (res.status === 200) {
@@ -43,7 +43,7 @@ var app = new Vue({
                 })
         },
         newConfirm: function (event) {
-            axios.post(api + 'epigram', 'content=' + this.newepigram)
+            axios.post(api + 'epigram', 'content=' + encodeURIComponent(this.newepigram))
                 .then(response => {
                     console.log(response)
                     var res = response.data
